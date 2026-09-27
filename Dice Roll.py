@@ -15,3 +15,7 @@ for i in range(10):
     die_10 = Die(sides=10)
 for i in range(10):
     die_10.roll_die()
+
+    die_20 = Die(sides=20)
+for i in range(10):
+    die_20.roll_die()
