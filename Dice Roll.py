@@ -5,8 +5,7 @@ class Die:
         self.sides = sides
 
     def roll_die(self):
-        result = random.randint(1, self.sides)
-        print(result)
+        return random.randint(1, self.sides)
 
 die_6 = Die()
 results_6 = []
