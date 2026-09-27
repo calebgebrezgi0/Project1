@@ -11,3 +11,7 @@ class Die:
         die_6 = Die()
 for i in range(10):
     die_6.roll_die()
+
+    die_10 = Die(sides=10)
+for i in range(10):
+    die_10.roll_die()
