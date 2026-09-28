@@ -41,3 +41,8 @@ def remove_item(grocery_list):
             print("Removed!\n")
         else:
             print("Invalid.\n")
+
+
+def main():
+    grocery_list = []
+    running = True
