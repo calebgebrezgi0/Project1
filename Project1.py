@@ -8,3 +8,13 @@ def add_item(grocery_list):
 def view_list(grocery_list):
     if len(grocery_list) == 0:
         print("List is empty.\n")
+    else:
+        number = 1
+        for item in grocery_list:
+            if item["checked"]:
+                mark = "[x]"
+            else:
+                mark = "[ ]"
+            print(number, mark, item["name"], "x" + str(item["quantity"]))
+            number += 1
+        print()
