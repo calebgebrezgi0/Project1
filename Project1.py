@@ -53,3 +53,22 @@ def main():
         for option in MENU:
             print(str(number) + ". " + option)
             number += 1
+
+        choice = input("Choose 1-5: ")
+
+        if choice == "1":
+            add_item(grocery_list)
+        elif choice == "2":
+            view_list(grocery_list)
+        elif choice == "3":
+            check_item(grocery_list)
+        elif choice == "4":
+            remove_item(grocery_list)
+        elif choice == "5":
+            print("Ending")
+            running = False
+        else:
+            print("Invalid option.\n")
+
+
+main()
