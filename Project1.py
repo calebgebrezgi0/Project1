@@ -29,9 +29,15 @@ def check_item(grocery_list):
             grocery_list[number - 1]["checked"] = True
             print("Checked off!\n")
         else:
-            print("Invalid\n")
+            print("Invalid.\n")
 
 
 def remove_item(grocery_list):
     view_list(grocery_list)
-   
+    if len(grocery_list) > 0:
+        number = int(input("Number to remove: "))
+        if 1 <= number <= len(grocery_list):
+            grocery_list.pop(number - 1)
+            print("Removed!\n")
+        else:
+            print("Invalid.\n")
