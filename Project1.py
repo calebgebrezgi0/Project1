@@ -5,6 +5,7 @@ def add_item(grocery_list):
     grocery_list.append(item)
     print("Added " + name + "\n")
 
+
 def view_list(grocery_list):
     if len(grocery_list) == 0:
         print("List is empty.\n")
@@ -19,6 +20,7 @@ def view_list(grocery_list):
             number += 1
         print()
 
+
 def check_item(grocery_list):
     view_list(grocery_list)
     if len(grocery_list) > 0:
@@ -28,3 +30,8 @@ def check_item(grocery_list):
             print("Checked off!\n")
         else:
             print("Invalid\n")
+
+
+def remove_item(grocery_list):
+    view_list(grocery_list)
+   
