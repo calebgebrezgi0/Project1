@@ -18,3 +18,6 @@ def view_list(grocery_list):
             print(number, mark, item["name"], "x" + str(item["quantity"]))
             number += 1
         print()
+
+def check_item(grocery_list):
+    view_list(grocery_list)
