@@ -1,3 +1,6 @@
+MENU = ("Add item", "View list", "Check off item", "Remove item", "Quit")
+
+
 def add_item(grocery_list):
     name = input("Item name: ")
     quantity = int(input("Quantity: "))
