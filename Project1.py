@@ -4,3 +4,7 @@ def add_item(grocery_list):
     item = {"name": name, "quantity": quantity, "checked": False}
     grocery_list.append(item)
     print("Added " + name + "\n")
+
+def view_list(grocery_list):
+    if len(grocery_list) == 0:
+        print("List is empty.\n")
