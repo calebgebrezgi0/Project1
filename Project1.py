@@ -21,3 +21,10 @@ def view_list(grocery_list):
 
 def check_item(grocery_list):
     view_list(grocery_list)
+    if len(grocery_list) > 0:
+        number = int(input("Number to check off: "))
+        if 1 <= number <= len(grocery_list):
+            grocery_list[number - 1]["checked"] = True
+            print("Checked off!\n")
+        else:
+            print("Invalid\n")
