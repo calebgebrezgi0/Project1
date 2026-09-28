@@ -46,3 +46,10 @@ def remove_item(grocery_list):
 def main():
     grocery_list = []
     running = True
+
+    while running:
+        print("=== Grocery Checklist ===")
+        number = 1
+        for option in MENU:
+            print(str(number) + ". " + option)
+            number += 1
